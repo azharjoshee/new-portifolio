@@ -1,0 +1,415 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    letter-spacing: 1px;
+}
+/* Helper Classes start here*/
+.container {
+    margin: 0 auto;
+    width: 85%;
+}
+.row {
+    display: flex;
+}
+.col {
+    display: inherit;
+    flex: 1;
+    
+}
+.sec-sv {
+    padding: 100px 0px;
+}
+.btn {
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: 1px solid;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-radius-0 {
+    border-radius: 0px;
+}
+.btn:focus {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+}
+.btn-primary:hover {
+    background-color: pink;
+    color: red;
+    border-color: pink;
+}
+.btn-primary:focus {
+    background-color: blue;
+    color: #fff;
+    border-color: blue;
+}
+
+.btn-secondary {
+    background-color: pink;
+    color: red;
+    border-color: pink;
+}
+.btn-secondary:hover {
+    background-color: transparent;
+    border-color: #333;
+}
+.btn-secondary:focus {
+    background-color: blue;
+    border-color: blue;
+    color: #fff;
+}
+@media(max-width: 992px ){
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Helper Classes end here*/
+/* Slider section start here */
+#section-slider .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    height:auto;
+}
+#section-slider .nav-bar .logo{
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#section-slider .top-bar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    height:auto;
+}
+#section-slider .top-bar ul a{
+    margin-right: 20px;
+    text-decoration: none;
+    height:auto;
+    color: white;
+    text-transform: uppercase;
+}
+#section-slider .top-bar ul a:hover{
+    color: crimson;
+}
+#section-slider {
+    height: 100vh;
+    background-image: url(./images/4.jpg);
+
+}
+#section-slider .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+#section-slider .container {
+    display: flex;
+    height: 100%;
+}
+#section-slider .container .row {
+    display: inherit;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#section-slider .container .row .content-box {
+    width: 40%;
+    text-align: center;
+}
+
+#section-slider .container .row .content-box h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+    color: #fff;
+}
+#section-slider .container .row .content-box h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin: 0px;   
+}
+#section-slider .container .row .content-box h2 span {
+    color:crimson;
+}
+#section-slider .container .row .content-box p {
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    color: #fff;
+}
+#freelance-available .content-dev{
+ display: flex;
+ flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#freelance-available .content-dev button {
+    margin-top: 20px;
+}
+/* Slider section end here */
+/* Side Box */
+.side-box {
+    position: fixed;
+    top: 40%;
+    right: 0%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+.side-box i{
+    display: flex;
+    justify-content: center;
+    height:100%;
+    align-items: center;
+    font-size: larger;
+
+}
+
+/* About Section Start here */
+#about-me .aboutme-content .social-icons ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+}
+#about-me .aboutme-content .social-icons ul li a{
+    color: black;
+}
+#about-me .aboutme-content .social-icons ul li {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 15px;
+    color: black;
+}
+
+/* About Section End here */
+/* our services Section start here */
+#our-services {
+    background-color: #ddd
+}
+#our-services .services-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#our-services .service-box-content{
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+    margin: 15px;
+}
+
+#our-services .service-box-content h3 { 
+    letter-spacing:1px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+#our-services .service-box-content .icon i{
+    color: red;
+    font-size: 50px;
+}
+#our-services .service-box-content .line { 
+    border-width: 1px;
+    border-style: solid;
+    width: 20%;
+    color: red;
+}
+
+
+
+@media(max-width: 992px) {
+    #our-services .service-box-content{ 
+        margin: 15px auto;
+    }
+    #section-slider .container .row .content-box {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* our services Section End here */
+/* clients Section start here */
+#our-clients{
+    background-color:silver
+}
+#our-clients .clients-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#our-clients .clients-content i{
+    font-size: 30px;
+    color:red;
+    background-color: transparent;
+
+}
+#our-clients .client-img img{
+    border-radius:100%;
+    height: 20%;
+    width: 20%;
+    margin: 20px;
+}
+/* clients Section End here */
+/* our work Section start here */
+#our-work .work-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#our-work .work-content ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 50px 0px;
+}
+#our-work .work-content ul li{
+    margin-right: 30px;
+    text-transform: capitalize;
+    padding: 5px 15px;
+}
+#our-work .work-content ul li:hover{
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    
+}
+/* our work Section End here */
+/* our blog Section start here */
+#our-blog{
+    background: silver;
+}
+#our-blog .blog-content{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#our-blog .blog-content-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#our-blog .blog-content-items .blog-items{
+    text-align:left;
+    margin-right: 30px;
+    background-color: white;
+    padding: 10px;
+}
+/* our blog Section end here */
+/* hover Section start here */
+.box{
+    overflow: hidden;
+    position: relative;
+}
+.box:before, .box:after{
+    content: "";
+    background: #34495e;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: all 0.35s 0s ease-out;
+}
+.box:hover:before{ bottom: 0; }
+.box:after{
+    opacity: 0.8;
+    bottom: 0;
+    top: 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: all 0.35s 0.2s ease-in;
+}
+.box:hover:after{ top: 25%; }
+.box img{
+    width: 100%;
+    height: auto;
+}
+.box .box-content{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-55%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transition: all 0.35s 0.5s ease;
+}
+.box:hover .box-content{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%);
+}
+.box .title{
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.box .title:after{
+    content: '';
+    height: 1px;
+    width: 100px;
+    margin: 5px auto 3px;
+    border-bottom: 1px dashed #fff;
+    display: block;
+    clear: both;
+}
+.box .post{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.box .icon{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 2;
+}
+.box .icon li{
+    margin: 0 3px;
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.4s ease 0.5s;
+}
+.box .icon li:nth-child(2){ transition-delay: 0.7s; }
+.box:hover .icon li{ opacity: 1; }
+.box .icon li a{
+    color: #333;
+    background-color: #fff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 31px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.box .icon li a:hover{ box-shadow: 3px 3px rgba(255,255,255,0.5); }
+@media only screen and (max-width:990px){
+    #our-work .box{ margin: 0 0 30px; }
+}
+/* hover Section end here */
