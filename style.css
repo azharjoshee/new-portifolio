@@ -44,7 +44,7 @@ p {
 }
 .btn-primary:hover {
     background-color: pink;
-    color: red;
+    color: crimson;
     border-color: pink;
 }
 .btn-primary:focus {
@@ -55,7 +55,7 @@ p {
 
 .btn-secondary {
     background-color: pink;
-    color: red;
+    color: crimson;
     border-color: pink;
 }
 .btn-secondary:hover {
@@ -82,8 +82,9 @@ p {
 }
 #section-slider .nav-bar .logo{
     font-size: 30px;
-    color: white;
+    color: crimson;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 #section-slider .top-bar ul{
@@ -186,6 +187,9 @@ p {
 #about-me .aboutme-content .social-icons ul li a{
     color: black;
 }
+#about-me .aboutme-content .social-icons ul :hover{
+  background: crimson;
+}
 #about-me .aboutme-content .social-icons ul li {
     width: 30px;
     height: 30px;
@@ -221,14 +225,14 @@ p {
     padding: 10px 0px;
 }
 #our-services .service-box-content .icon i{
-    color: red;
+    color: crimson;
     font-size: 50px;
 }
 #our-services .service-box-content .line { 
     border-width: 1px;
     border-style: solid;
     width: 20%;
-    color: red;
+    color: crimson;
 }
 
 
@@ -254,7 +258,7 @@ p {
 }
 #our-clients .clients-content i{
     font-size: 30px;
-    color:red;
+    color:crimson;
     background-color: transparent;
 
 }
@@ -298,17 +302,20 @@ p {
     width: 50%;
     margin: 0 auto;
 }
-#our-blog .blog-content-items{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+#our-blog .row .blog-card{
+  display: flex;
+  background-color: white;
+  width: 26.5%;
 }
-#our-blog .blog-content-items .blog-items{
-    text-align:left;
-    margin-right: 30px;
-    background-color: white;
-    padding: 10px;
+#our-blog .row .blog-card button{
+  background: none;
+  border: none;
 }
+#our-blog .row .blog-card .card-items h4 a{
+  text-decoration: none;
+  color: crimson;
+}
+
 /* our blog Section end here */
 /* hover Section start here */
 .box{
@@ -413,3 +420,229 @@ p {
     #our-work .box{ margin: 0 0 30px; }
 }
 /* hover Section end here */
+
+/* Codes For eight section Starts Here */
+.container {
+    padding: 0px 80px;
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      padding: 0;
+    }
+  }
+  
+  .row {
+    display: flex;
+    /* padding: 80px 0px; */
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 576px) {
+    .row {
+      display: block;
+      padding: 80px 0px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .row {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  .col {
+    /* flex: 1; */
+  }
+  
+  .header {
+    text-align: center;
+    width: 50%;
+
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width:991px) {
+    .header {
+      width: 100%;
+    }
+  }
+  
+  .header p {
+    padding: 10px 0px;
+    line-height: 25px;
+  }
+  
+
+  
+  #eighth .container .eighth-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width:576px) {
+    #eighth .container .header {
+      padding: 80px 0px;
+    }
+  
+    #eighth .container .eighth-icons {
+      display: flex;
+      padding-bottom: 50px;
+    }
+  }
+  
+  #eighth .container .eighth-icons .icon-items {
+    text-align: center;
+  }
+  
+  #eighth .container .eighth-icons .icon-items i {
+    font-size: 50px;
+    color: rgb(196, 44, 69);
+    padding: 10px 0px;
+    margin: 10px;
+  }
+  
+  #eighth .container .eighth-icons .icon-items h4 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  
+  #eighth .container .eighth-icons .icon-items h5 {
+    font-size: 15px;
+    color: rgb(66, 65, 65);
+  }
+
+  #eighth .container .form-eight form {
+    padding: 0px 20px 80px;
+    width: 100%;
+  }
+  
+  #eighth .container .form-eight form input {
+    outline: none;
+  }
+  
+  #eighth .container .form-eight form .name {
+    padding: 10px;
+    width: 45%;
+    text-transform: capitalize;
+    margin: 10px 20px 10px 0px;
+  }
+  
+  #eighth .container .form-eight form .email {
+    padding: 10px;
+    width: 45%;
+    margin: 0px;
+  }
+  
+  #eighth .container .form-eight form .subject {
+    width: 94%;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  
+  #eighth .container .form-eight form .message {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 94%;
+    outline: none;
+  }
+  
+  #eighth .container .form-eight form .form-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 96%;
+  }
+  
+  @media (max-width:576px) {
+  
+    #eighth .container .form-eight form {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    #eighth .container .form-eight form .name {
+      width: 85%;
+    }
+  
+    #eighth .container .form-eight form .email {
+      width: 85%;
+    }
+  
+    #eighth .container .form-eight form .subject {
+      width: 85%;
+    }
+  
+    #eighth .container .form-eight form .message {
+      width: 85%;
+    }
+  
+    #eighth .container .form-eight form .form-btn {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width:991px){
+  
+  }
+/* Codes For eight Section Ends Here */
+/* ninth Section start Here */
+
+
+  #ninth {
+    background-color: rgb(39, 39, 39);
+  }
+  
+  #ninth .ninth-icons {
+    text-align: center;
+    padding: 80px 0px 30px;
+  }
+  
+  #ninth .ninth-icons a {
+    color: rgb(185, 183, 183);
+    margin: 0px 3px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #505252;
+  }
+  #ninth .ninth-icons a:hover{
+    background: crimson;
+  }
+  
+  #ninth .ninth-icons .ninth-para {
+    margin-top: 20px;
+  }
+  
+  #ninth .ninth-icons .ninth-para p {
+    color: rgb(185, 183, 183);
+  }
+  
+  #ninth .ninth-icons .back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  #ninth .ninth-icons .back-to-top a {
+    color: white;
+    background-color: rgb(196, 44, 69);
+    border-radius: 5px;
+  }
+/* ninth Section end Here */
+  
+
